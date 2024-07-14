@@ -1,0 +1,26 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+  }
+  
+  .content {
+    // padding: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+  
+  mat-form-field {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+  ::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: #fff !important;
+  }

@@ -1,0 +1,168 @@
+
+.results {
+    margin-top: 20px;
+  }
+  
+  .result-card {
+    margin-bottom: 10px;
+    // width: 18rem;
+  }
+
+  .result-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ::ng-deep .mat-checkbox-focused .mat-checkbox-background {
+    border-color: transparent !important; // Remove focus outline
+  }
+  
+  ::ng-deep .mat-checkbox-focused .mat-checkbox-checkmark {
+    color: inherit !important; // Keep the checkmark color unchanged
+  }
+  
+  ::ng-deep .mat-checkbox:focus .mat-checkbox-background {
+    outline: none; // Remove any default outline
+  }
+
+  ::ng-deep html .mat-accent{--mdc-circular-progress-active-indicator-color:none !important};
+  
+
+  .result-container{
+    display: flex;
+  }
+
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .icon-shadow {
+    display: inline-flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+    width: 35px; /* Set width and height for the circular shape */
+    height: 35px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: white; /* Optional: background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.icon-phone {
+    display: inline-flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Set width and height for the circular shape */
+    height: 20px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: white; /* Optional: background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+    font-size: 16px;
+}
+
+.icon-shadow:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+.fa-paper-plane {
+    font-size: 16px; /* Adjust size of the icon */
+    color: inherit; /* Change icon color if needed */
+}
+
+.info-container {
+    display: flex;
+    align-items: stretch; /* Stretch items to the same height */
+    border: 1px solid #ccc;
+    padding: 10px;
+    // border-radius: 5px;
+    // background-color: #f9f9f9;
+}
+
+.info-container p {
+    margin: 0; /* Remove default margin from paragraphs */
+}
+
+.separator {
+    width: 1px; /* Width of the separator */
+    background-color: #000; /* Color of the separator */
+    margin: 0 10px; /* Space around the separator */
+}
+
+.mat-mdc-card-content{
+    padding: 0;
+}
+
+mat-card-actions p{
+    margin: 0;
+}
+
+.mdc-card__actions{
+    padding: 0;
+}
+
+.icon-email {
+    display: inline-flex; /* Center the icon */
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Set width and height for the circular shape */
+    height: 20px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: white; /* Optional: background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+    font-size: 16px;
+    color: #ca5b50;
+}
+
+
+.rating-container {
+    display: flex;
+    align-items: center; /* Center the stars vertically */
+    justify-content: space-between;
+}
+
+.star-icon {
+    font-size: 16px; /* Adjust size of stars */
+    margin-right: 2px; /* Space between stars */
+}
+
+.rating-value {
+    margin-left: 5px; /* Space between stars and rating value */
+    font-weight: bold; /* Make the rating value stand out */
+}
+
+.mat-mdc-card-header{
+    padding: 10px 10px 0;
+}
+
+.container {
+    display: flex;
+}
+
+.results {
+    transition: width 0.3s;
+}
+
+.col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+.result-card {
+    margin-bottom: 1rem;
+}
+

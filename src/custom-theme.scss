@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+// Define your custom color palette
+$primary-color: mat-palette($mat-green, 500, 300, 700);
+$primary-color: map-merge($primary-color, (default: #3ba77b));
+
+// Define the theme
+$custom-theme: mat-light-theme(
+  (
+    color: (
+      primary: $primary-color,
+      accent: mat-palette($mat-pink, A200, A100, A400),
+    ),
+  )
+);
+
+// Include the theme styles
+@include angular-material-theme($custom-theme);

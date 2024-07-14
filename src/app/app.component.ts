@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'infrrd';
+
+  isSearchSidenavOpen = false;
+
+  openSearch() {
+    this.isSearchSidenavOpen = true;
+  }
+
+  closeSearch() {
+    this.isSearchSidenavOpen = false;
+  }
+
+  isSearchVisible = false;
+
+  toggleSearch() {
+    this.isSearchVisible = !this.isSearchVisible;
+    console.log('clicked')
+  }
+
+  hideSearch() {
+    this.isSearchVisible = false;
+  }
+  
 }

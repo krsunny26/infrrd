@@ -1,0 +1,56 @@
+<!-- <button (click)="toggleSearch()">Toggle Search</button> -->
+
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col-md-3" *ngIf="isSearchVisible" >
+      <app-search></app-search>
+    </div>
+    <div [ngClass]="{'col-md-9': isSearchVisible, 'col-md-12': !isSearchVisible}">
+      <div class="result-filter">
+        <p>{{results.length}} results Found</p>
+        <mat-checkbox>Show only Bangalore Employees</mat-checkbox>
+      </div>
+      <br/>
+      <div class="row">
+        <div [ngClass]="{'col-md-4': isSearchVisible, 'col-md-3': !isSearchVisible}" *ngFor="let result of results" class="result-card">
+          <mat-card>
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{result.name}}</mat-card-title>
+              <mat-card-subtitle>{{result.designation}}</mat-card-subtitle>
+              <i class="fa fa-paper-plane icon-shadow"></i>
+            </mat-card-header>
+            <!-- Rating Display -->
+            <div class="rating-container">
+              <span class="rating-value">{{result.rating}} Rating</span>
+              <star-rating [starType]="'svg'" [rating]="result.rating"></star-rating>
+            </div>
+            <mat-card-content>
+              <div class="info-container">
+                <p>Experience: {{result.experience}} Years</p>
+                <div class="separator"></div>
+                <p>Date of Joining: {{result.joiningDate}}</p>
+              </div>
+              <div class="info-container">
+                <p>Current Team: {{result.team}}</p>
+              </div>
+              <div class="info-container">
+                <p>Reporting Manager: {{result.manager}}</p>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-icon-button>
+                <mat-icon class="icon-phone" color="primary">phone</mat-icon>
+              </button>
+              <p>7406559241</p>
+              <button mat-icon-button>
+                <mat-icon class="icon-email" color="danger">email</mat-icon>
+              </button>
+              <p>andrew&#64;.ai</p>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
